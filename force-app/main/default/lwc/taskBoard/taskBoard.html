@@ -1,0 +1,9 @@
+<template>
+  Test WTF
+  <div>
+    <template for:each={taskIdArray} for:item="taskObj">
+      <c-task-card  key={taskObj.Id} record-id={taskObj.Id}></c-task-card>
+    </template>
+  </div>
+  <lightning-button onclick={increaseTaskCountToShow} label="More"></lightning-button>
+</template>
